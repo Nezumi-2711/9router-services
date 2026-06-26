@@ -2,7 +2,7 @@ services:
   - type: web
     name: 9router
     runtime: docker
-    plan: starter
+    plan: free
     dockerfilePath: ./Dockerfile
     envVars:
       - key: DATA_DIR
