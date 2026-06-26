@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: 9router
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATA_DIR
+        value: /app/data
+    disk:
+      name: 9router-data
+      mountPath: /app/data
+      sizeGB: 1
